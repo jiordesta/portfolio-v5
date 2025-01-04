@@ -143,51 +143,6 @@ export default function About() {
     );
   };
 
-  const Skills = () => {
-    const skills = [
-      "ReactJS",
-      "ReactNative",
-      "ExpressJS",
-      "NodeJS",
-      "NextJS",
-      "MongoDB",
-      "Firebase",
-      "Redux",
-      "Ant-Design",
-      "Bootstrap",
-      "MaterialUI",
-      "TailwindCSS",
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Java",
-      "Python",
-      "C",
-      "Typescript",
-      "git",
-    ];
-    return (
-      <div className="w-full lg:w-1/2">
-        <h1 className="text-center">
-          Throughout my journey, I’ve cultivated a wide range of skills that
-          empower me to navigate and excel in diverse technological landscapes
-        </h1>
-        <ul className="flex flex-wrap gap-1 justify-center items-center skillscontainer">
-          {skills.map((skill) => {
-            return (
-              <li
-                key={skill}
-                className="px-4 py-2 bg-color2 drop-shadow-lg rounded-lg glowText cursor-default"
-              >
-                {skill}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    );
-  };
-
   const { section } = useParams();
 
   useEffect(() => {
